@@ -3,7 +3,7 @@ use tracing_core::{collect::Collect, metadata::Metadata, span, Event};
 use crate::registry::{self, LookupSpan, SpanRef};
 #[cfg(feature = "registry")]
 use crate::{filter::FilterId, registry::Registry};
-/// Represents information about the current context provided to [subscribers]s by the
+/// Represents information about the current context provided to [subscriber]s by the
 /// wrapped [collector].
 ///
 /// To access [stored data] keyed by a span ID, implementors of the [`Subscribe`]
