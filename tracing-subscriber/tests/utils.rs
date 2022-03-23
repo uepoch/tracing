@@ -31,7 +31,7 @@ fn builders_are_init_ext() {
 
 #[test]
 #[cfg(all(feature = "fmt", feature = "env-filter"))]
-fn layered_is_init_ext() {
+fn subscribered_is_init_ext() {
     tracing_subscriber::registry()
         .with(tracing_subscriber::fmt::subscriber())
         .with(tracing_subscriber::EnvFilter::new("foo=info"))
